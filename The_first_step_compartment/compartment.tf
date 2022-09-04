@@ -18,3 +18,16 @@ resource "oci_identity_compartment" "openvpn" {
     #defined_tags = {"Operations.CostCenter"= "42"}
     freeform_tags = {"Hobby"= "OpenVPN"}
 }
+
+resource "oci_identity_compartment" "k8s" {
+    # All below are - required
+    #--------------------------
+    compartment_id = var.tenancy_ocid
+    description = "Place for the kubernetes nodes."
+    name = "k8s"
+
+    # All below are - optional
+    #--------------------------
+    enable_delete = true
+    freeform_tags = {"Hobby"= "For Kubernetes nodes."}
+}
