@@ -12,3 +12,8 @@ https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/tf-provider/01-
 Целями данных публикаций является самообразование и самообучение Oracle Cloud Infrastucture которыми может воспользоваться каждый, кому это может быть интересно. Постараюсь излагать и публиковать материал так, чтобы любой мог сделать git clone и начать процесс самообразования и самообучения.
 #### How anyone can use this publications
 Начинать нужно с данного каталога. Здесь не много файлов и ссылок, необходимых для того, чтобы начать процесс освоения Oracle Cloud Infrastructure. Далее двигаться по каталогам: The_first_step_чему_посвещен_шаг, The_second_step_чему_посвещен_шаг и так далее. В каждом каталоге есть файл README, который будет содержать минимально необходимую информацию для освоения материала и его использования. Начните с создания своего account в Oracle Cloud [нажимайте на кнопку Start for free](https://www.oracle.com/cloud/free/?source=CloudFree_CTA1_Default&intcmp=CloudFree_CTA1_Default) и с установки [terrraform](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/tf-provider/01-summary.htm).
+```commandline
+$ terraform init
+$ terraform plan
+$ terraform apply
+```
