@@ -7,7 +7,7 @@ resource "oci_identity_compartment" "openvpn" {
     # то используется tenancy_ocid,
     # для идентификации вышестоящего уровня compartment
     compartment_id = var.tenancy_ocid
-    description = "OpenVPN server for my own use."
+    description = "Compartment to launch OpenVPN server for my own use."
     name = "OpenVPN"
 
     # All below are - optional
@@ -23,7 +23,7 @@ resource "oci_identity_compartment" "k8s" {
     # All below are - required
     #--------------------------
     compartment_id = var.tenancy_ocid
-    description = "Place for the kubernetes nodes."
+    description = "Compartment to launch kubernetes nodes for my own use."
     name = "k8s"
 
     # All below are - optional
