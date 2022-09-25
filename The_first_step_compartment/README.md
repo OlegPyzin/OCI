@@ -11,6 +11,8 @@ $ terraform init
 $ terraform plan
 $ terraform apply
 ```
+### Execution results
+После выполнения terraform apply будут созданы два compartments: OpenVPN и k8s. Вся необходимая информация для дальнейших действий будет размещена в каталоге ./output в файле compartment.lst, как например compartment_id.
 ### How to delete compartment
 Прежде чем выполнить команду terraform destroy в данном каталоге необходимо предварительно удалить все созданные в compartment ресурсы, которые были созданы при помощи кода terraform в других каталогах. Только после удаления всех ресурсов во всех созданных compartment можно вернуться в этот каталог и удалить compartment.
 ### Дополнительная информация
