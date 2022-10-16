@@ -20,5 +20,5 @@ subnet_cidr_block_openvpn     = "10.0.1.0/24, or your own CIDR block for the SUB
 subnet_display_name_k8s       = "Write your own SUBNET name in the Virtual Cloud Network in the OCI"
 subnet_dns_label_k8s          = "Write your own DNS name in the SUBNET in the Virtual Cloud Network in the OCI"
 subnet_cidr_block_k8s         = "10.0.2.0/24, or your own CIDR block for the SUBNET in the Virtual Cloud Network in the OCI"
-internet_gateway_display_name = "Write your own internet GATEWAY name in the Virtual Cloud Network in the OCI"
+vcn_freeform_tags = { "Your name tag" = "Name of tag" }
 #--------------------------------------------------------

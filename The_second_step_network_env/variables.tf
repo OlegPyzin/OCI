@@ -85,9 +85,9 @@ variable "subnet_cidr_block_k8s" {
     type = string
 }
 
-variable "internet_gateway_display_name" {
-    description = "Name of Internet GATEWAY for the VCN in the OCI"
-    type = string
+variable "vcn_freeform_tags" {
+    description = "Name of free form Tags."
+    type = map(string)
 }
 #--------------------------------------------------------
 # End of file: variables.tf
