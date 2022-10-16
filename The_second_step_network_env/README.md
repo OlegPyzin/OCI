@@ -48,7 +48,17 @@ ingress_security_rules {
     }
 }
 ```
-Данная запись означает что разрешены ответы на запросы icmp с любого адреса.
+Данная запись означает что разрешены ответы на запросы icmp из VCN с любого адреса.
+```text
+ingress_security_rules {
+    protocol = "1"
+    source = "CIDR VCN block"
+    icmp_options {
+        type = 3
+    }
+}
+```
+Данная запись означает что разрешены запросы icmp с любого адреса внутри VCN и получение соответствующих ответов.
 #### How to create resources
 ```commandlines
 $ terraform init
