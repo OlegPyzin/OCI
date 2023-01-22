@@ -1,0 +1,24 @@
+# File: terraform.tfvars.example
+# Oracle Cloud Infrastructure
+#----------------------------
+# This is an example How to looks terraform.tfvars file
+# replace the EXAMPLE of data variable with the real data
+#--------------------------------------------------------
+tenancy_ocid                = "ocid1.tenancy.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+compartment_id_openvpn      = "ocid1.compartment.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+compartment_id_k8s          = "ocid1.compartment.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+region              = "eu-stockholm-1"
+user_ocid           = "ocid1.user.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+fingerprint         = "xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx"
+private_key_path    = "/path/to/your/filename.pem"
+vcn_display_name    = "Write your own name of the Virtual Cloud Network in the OCI"
+vcn_dns_label       = "Write your own DNS name of the Virtual Cloud Network in the OCI"
+vcn_cidr_block      = "10.0.0.0/16, or your own CIDR block for the Virtual Cloud Network in the OCI"
+subnet_display_name_openvpn   = "Write your own SUBNET name in the Virtual Cloud Network in the OCI"
+subnet_dns_label_openvpn      = "Write your own DNS name in the SUBNET in the Virtual Cloud Network in the OCI"
+subnet_cidr_block_openvpn     = "10.0.1.0/24, or your own CIDR block for the SUBNET in the Virtual Cloud Network in the OCI"
+subnet_display_name_k8s       = "Write your own SUBNET name in the Virtual Cloud Network in the OCI"
+subnet_dns_label_k8s          = "Write your own DNS name in the SUBNET in the Virtual Cloud Network in the OCI"
+subnet_cidr_block_k8s         = "10.0.2.0/24, or your own CIDR block for the SUBNET in the Virtual Cloud Network in the OCI"
+vcn_freeform_tags = { "Your name tag" = "Name of tag" }
+#--------------------------------------------------------

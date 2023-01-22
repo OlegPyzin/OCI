@@ -59,6 +59,8 @@ ingress_security_rules {
 }
 ```
 Данная запись означает что разрешены запросы icmp с любого адреса внутри VCN и получение соответствующих ответов.
+
+С информацией о протоколах можно ознакомиться [здесь:](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
 #### How to create resources
 ```commandlines
 $ terraform init
