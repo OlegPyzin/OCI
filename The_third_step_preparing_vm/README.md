@@ -1,8 +1,7 @@
 # Preparing to launch virtual machine
 
 ### Подготовка исходных данных
-
-
+#### Характеристики виртуальной машины
 В первом и втором шагах были созданы необходимые ресурсы для запуска виртуальной машины в OCI, такие как COMPARTMENTS, VCN и SUBNETS.
 
 Как реальный компьютер так и виртуальная машина имеет вполне определенные технические характеристирики, такие как: тип процессора и количество ядер процессора, объем ОЗУ, тип используемой сетевой платы, которая обеспечивает скорость передачи данных по сети и так далее.
@@ -29,6 +28,10 @@ VM.Standard.E2.1.Micro
 
 Ознакомиться с описанием ресурса для получения списка доступных SHAPES можно [здесь:](https://registry.terraform.io/providers/oracle/oci/latest/docs/data-sources/core_shapes)
 https://registry.terraform.io/providers/oracle/oci/latest/docs/data-sources/core_shapes
+#### Описание операционных систем
+Итак нами были получены данные о характеристиках доступных виртуальных машин и далее нам необходимо получить данные об операционных системах, которые могут инсталлированы на виртуальную машишу.
+Ознакомиться с описанием ресурса для получения списка доступных IMAGES можно [здесь:](https://registry.terraform.io/providers/oracle/oci/latest/docs/data-sources/core_images)
+https://registry.terraform.io/providers/oracle/oci/latest/docs/data-sources/core_images
 ### Network environment for the VM
 #### VCNs and SUBNETs
 

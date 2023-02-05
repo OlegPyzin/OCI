@@ -2,15 +2,21 @@
 # Oracle Cloud Infrastructure
 #----------------------------
 # Output information about available
-# SHAPES in the OpenVPN compartment.
+# SHAPES and IMAGES in the OpenVPN compartment.
 #--------------------------------------------------------
 locals {
   shapes = data.oci_core_shapes.list.shapes
+  images = data.oci_core_images.images.compartment_id
 }
 
 output "shapes" {
   description = "Available SHAPES in the OpenVPN compartment."
   value = data.oci_core_shapes.list.shapes
+}
+
+output "images" {
+  description = "Available IMAGES in the OpenVPN compartment."
+  value = data.oci_core_images.images.images
 }
 
 # writing information list of shapes
